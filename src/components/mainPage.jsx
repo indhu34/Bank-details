@@ -53,7 +53,7 @@ function MainPage() {
   }
 
   function populateData(data) {
-    const query = searchQuery.trim();
+    const query = searchQuery.trim().toUpperCase();
     const filteredData = [];
     if (query.length === 0) return setdata(data);
     data.forEach((datum) => {
